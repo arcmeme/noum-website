@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NOUM Token - Energetic Galaxy</title>
+<link rel="icon" type="image/svg+xml" href="assets/svg32.svg">
+<link href="css/style.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="particles" style="position:fixed;inset:0;z-index:0"></canvas>
+
+<header class="container" role="banner">
+  <div class="header-left">
+    <img src="assets/logo.png" class="logo" alt="NOUM logo">
+    <div class="brand">
+      <h1>NOUM</h1>
+      <p>Community-driven token • Energetic Galaxy</p>
+    </div>
+  </div>
+  <nav class="header-right">
+    <a class="btn btn-outline" href="#token" style="margin-right:8px">Contract</a>
+    <a class="btn" href="https://pancakeswap.finance" target="_blank">Buy</a>
+  </nav>
+</header>
+
+<main style="position:relative;z-index:2">
+  <section class="hero container" aria-labelledby="hero-title">
+    <div class="hero-left">
+      <h2 id="hero-title" class="h-title">NOUM Token — Launching a cosmic community 🚀</h2>
+      <p class="h-lead">Join NOUM: fast, fun, and community-first tokenomics inspired by cosmic energy. Built for holders who love memes, growth, and long-term vibes.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://pancakeswap.finance" target="_blank">Buy on PancakeSwap</a>
+        <button class="btn btn-outline" data-addr="0x3f79756152608f63aA0aC77f106dF07cdAEFbB2d" onclick="copyAddress(this)">Copy Contract</button>
+        <a class="btn btn-outline" href="#tokenomics">Tokenomics</a>
+      </div>
+
+      <div class="cards" aria-hidden="false">
+        <div class="card">
+          <div class="small">Total Supply</div>
+          <div style="font-weight:800;margin-top:6px">10,000,000</div>
+        </div>
+        <div class="card">
+          <div class="small">Chain</div>
+          <div style="font-weight:800;margin-top:6px">BNB Smart Chain</div>
+        </div>
+        <div class="card">
+          <div class="small">Symbol</div>
+          <div style="font-weight:800;margin-top:6px">NOUM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- hero image/cinematic logo -->
+      <img src="assets/hero.jpg" alt="NOUM cinematic" style="max-width:100%;border-radius:12px;box-shadow:0 20px 80px rgba(0,0,0,0.6)">
+    </div>
+  </section>
+
+  <section id="token" class="section container">
+    <div class="grid-two">
+      <div class="panel">
+        <h3>Contract</h3>
+        <p class="small">Contract Address (BSC):</p>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+          <code style="background:rgba(255,255,255,0.02);padding:8px;border-radius:8px">0x3f79756152608f63aA0aC77f106dF07cdAEFbB2d</code>
+          <button class="btn btn-outline" data-addr="0x3f79756152608f63aA0aC77f106dF07cdAEFbB2d" onclick="copyAddress(this)">Copy</button>
+        </div>
+
+        <p class="small" style="margin-top:14px">Verified on BscScan? Make sure your contract is verified for explorers to display token details and logo.</p>
+      </div>
+
+      <div class="panel">
+        <h3>Quick Links</h3>
+        <p class="small">Add these to your bookmarks:</p>
+        <ul style="margin-top:8px;color:var(--muted)">
+          <li><a href="https://bscscan.com/token/0x3f79756152608f63aA0aC77f106dF07cdAEFbB2d" target="_blank">BscScan Token Page</a></li>
+          <li><a href="https://pancakeswap.finance" target="_blank">PancakeSwap</a></li>
+          <li><a href="https://dexscreener.com" target="_blank">Dexscreener</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="section container">
+    <div class="panel" style="width:100%">
+      <h3>Tokenomics</h3>
+      <p class="small">Simple, transparent allocation.</p>
+      <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+        <div class="card"><div class="small">Liquidity</div><div style="font-weight:800;margin-top:6px">40%</div></div>
+        <div class="card"><div class="small">Community / Rewards</div><div style="font-weight:800;margin-top:6px">30%</div></div>
+        <div class="card"><div class="small">Team</div><div style="font-weight:800;margin-top:6px">15%</div></div>
+        <div class="card"><div class="small">Marketing</div><div style="font-weight:800;margin-top:6px">10%</div></div>
+        <div class="card"><div class="small">Burn</div><div style="font-weight:800;margin-top:6px">5%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section container">
+    <div class="panel" style="width:100%">
+      <h3>Roadmap</h3>
+      <ol style="color:var(--muted);margin-top:10px">
+        <li>Initial Launch & Liquidity</li>
+        <li>Community Building & Listings</li>
+        <li>Staking / Rewards Integration</li>
+        <li>Partnerships & Expansion</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2025 NOUM • Built by community — <a href="https://github.com" target="_blank">GitHub</a>
+  </footer>
+</main>
+
+<script src="js/particles.js"></script>
+</body>
+</html>
